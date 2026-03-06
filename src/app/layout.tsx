@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: "kLic - Create & Share Video Stories",
   description:
     "kLic is a platform for creating, editing, and sharing video stories powered by AI.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
