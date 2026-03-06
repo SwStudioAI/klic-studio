@@ -18,7 +18,10 @@ jobs:
 
       - run: npm ci
 
-      - name: Build & Deploy
+      - name: Build for Cloudflare
+        run: npm run cf:build
+
+      - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
