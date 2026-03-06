@@ -1,0 +1,20 @@
+{
+  "name": "klic-studio",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2024-12-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "routes": [
+    {
+      "pattern": "studio.k-lic.com",
+      "zone_id": "76759011a1a05595213450eb4259f89e"
+    },
+    {
+      "pattern": "studio.k-lic.com/*",
+      "zone_id": "76759011a1a05595213450eb4259f89e"
+    }
+  ]
+}
